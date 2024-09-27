@@ -1,30 +1,30 @@
-// ingresar una cadena de texto
-let texto = prompt("Introduce vocales: ").toLowerCase();
+// Solicitar al usuario que ingrese una palabra
+let texto = prompt("Introduce una palabra: ").toLowerCase();
 
-// inicia contadores para vocales
+// Inicia contadores para cada vocal
 let conteoA = 0, conteoE = 0, conteoI = 0, conteoO = 0, conteoU = 0;
 
-// recorrer  la cadena
+// Recorrer la cadena de texto
 for (let i = 0; i < texto.length; i++) {
     let caracter = texto[i];
-    
-// verificar si es vocal
-if (caracter === 'a') {
-    conteoA++;
-} else if (caracter === 'e') {
-    conteoE++;
-} else if (caracter === 'i') {
-    conteoI++;
-} else if (caracter === 'o') {
-    conteoO++;
-} else if (caracter === 'u') {
-    conteoU++;
-}
+
+    // Verificar si el carácter es una vocal y aumentar su contador
+    if (caracter === 'a') {
+        conteoA++;
+    } else if (caracter === 'e') {
+        conteoE++;
+    } else if (caracter === 'i') {
+        conteoI++;
+    } else if (caracter === 'o') {
+        conteoO++;
+    } else if (caracter === 'u') {
+        conteoU++;
+    }
 }
 
-// Muestra cantidad de vocales
-console.log(`vocal 'a' esta ${conteoA} veces.`);
-console.log(`vocal 'e' esta ${conteoE} veces.`);
-console.log(`vocal 'i' esta ${conteoI} veces.`);
-console.log(`vocal 'o' esta ${conteoO} veces.`);
-console.log(`vocal 'u' esta ${conteoU} veces.`);
+// Mostrar la cantidad de cada vocal
+document.write(`<p>La vocal 'a' aparece ${conteoA} veces.</p>`);
+document.write(`<p>La vocal 'e' aparece ${conteoE} veces.</p>`);
+document.write(`<p>La vocal 'i' aparece ${conteoI} veces.</p>`);
+document.write(`<p>La vocal 'o' aparece ${conteoO} veces.</p>`);
+document.write(`<p>La vocal 'u' aparece ${conteoU} veces.</p>`);
