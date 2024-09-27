@@ -1,18 +1,18 @@
-// Inicializar variables
+// Inicializa las variables
 let suma = 0;
-let numero = 500; // Primer número de la secuencia
+let numeroCreciente = 500; // Primer numero del patron creciente
+let numeroDecreciente = 456; // Primer numero del patron decreciente
 
-// Bucle para recorrer la secuencia
-while (numero <= 800) {
-    // Agregar el número actual a la suma
-    suma += numero;
+// Bucle para el patron creciente
+while (numeroCreciente <= 800) {
+    suma += numeroCreciente;
+    numeroCreciente += 10; // Incremento de 10 en cada paso
+}
 
-    // Alternar entre sumar y restar 56
-    if (numero % 112 === 0) {  // Esto asegura que se alternen los valores correctamente
-        numero += 56;
-    } else {
-        numero -= 56;
-    }
+// Bucle para el patron decreciente
+while (numeroDecreciente >= 0) {
+    suma += numeroDecreciente;
+    numeroDecreciente -= 2; // Decremento de 2 en cada paso
 }
 
 // Imprimir el resultado de la sumatoria
