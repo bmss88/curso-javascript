@@ -16,7 +16,7 @@ function verificarNumero() {
     // Convertir la entrada a un número entero
     numero = parseInt(numero);
 
-    // Obtener el elemento donde se mostrará el resultado
+    // Obtener el elemento donde se mostrara el resultado
     let resultadoElemento = document.getElementById("resultado");
 
     if (isNaN(numero)) {
