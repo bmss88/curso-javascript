@@ -10,6 +10,6 @@
     <p>Ingresa una contraseña cuando se te solicite y verifica su validez según los criterios establecidos.</p>
 
     <!-- Cargar el archivo de JavaScript -->
-    <script src="validacion.js"></script>
+    <script src="Lab1_ej2.js"></script>
 </body>
 </html>
